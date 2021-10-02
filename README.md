@@ -10,7 +10,7 @@
 
 授权许可的中文版可在[这里](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans)找到。
 
-**对于文档中出现的代码部分，如演示用的代码、嵌入文档的代码，除CC BY-NC-SA 4.0之外，还以MIT许可协议进行授权。**
+**对于文档中出现的代码部分，如演示用的代码、嵌入文档的代码，无特殊标明的，除CC BY-NC-SA 4.0之外，还以MIT许可协议进行授权。**
 
 ``` text
 Copyright 2021 ReFreSH

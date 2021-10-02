@@ -14,7 +14,10 @@ jobs:
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: ./CSharp
+          image_import: ./CSharp
           output_dir: pdfs
+          theme: ./css/fluent.css
+          highlight_theme: ./css/fluent.css
           build_html: false
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
