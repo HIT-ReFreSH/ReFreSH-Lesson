@@ -2,6 +2,10 @@
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
 本仓库包含ReFreSH俱乐部开设课程的文档资料，以CC BY-NC-SA 4.0进行授权。
 
 授权许可的中文版可在[这里](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans)找到。
