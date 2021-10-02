@@ -1,0 +1,27 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+      - uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: "2.14.2"
+      - name: Convert to Tex
+        run: pwsh ./script/ci-pre.ps1
+      - name: Build to PDF
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "./text/**.tex"
+          glob_root_file: true
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with: 
+          name: PDF
+          path: ./tex/**/*.pdf
