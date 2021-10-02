@@ -10,18 +10,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Build PDF
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
-          pandoc-version: "2.14.2"
-      - name: Convert to Tex
-        run: pwsh ./script/ci-pre.ps1
-      - name: Build to PDF
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "./text/**.tex"
-          glob_root_file: true
+          input_dir: .
+          output_dir: pdfs
+          build_html: false
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with: 
           name: PDF
-          path: ./tex/**/*.pdf
+          path: pdfs
