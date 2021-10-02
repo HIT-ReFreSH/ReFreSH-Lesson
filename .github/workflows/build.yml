@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      - name: Build PDF
+      - name: Build CSharp PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: .
+          input_dir: ./CSharp
           output_dir: pdfs
           build_html: false
       - name: Upload Artifacts
