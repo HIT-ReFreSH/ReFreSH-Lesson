@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ReFreSH-Lesson</title>
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css">
-  <link rel="icon" type="image/png" href="favicon.png" />
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'HIT-ReFreSH-Lesson',
-      repo: 'HIT-ReFreSH/ReFreSH-Lesson',
-      loadSidebar: true
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReFreSH-Lesson</title>
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github@1.0.3/index.min.js"></script>
+    <script>
+      window.$docsify = {
+        plugins: [
+          EditOnGithubPlugin.create(
+            "https://github.com/HIT-ReFreSH/ReFreSH-Lesson/blob/main/",
+            null,
+            (file) => "在GitHub上编辑"
+          ),
+        ],
+        name: "HIT-ReFreSH-Lesson",
+        repo: "HIT-ReFreSH/ReFreSH-Lesson",
+        loadSidebar: true,
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/docsify@4.12.1/lib/docsify.min.js"
+      integrity="sha256-SMbD6TUjXm39IIYG4s98d3aewAnhceOeHXIEG2EfCOs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/docsify@4.12.1/lib/plugins/zoom-image.min.js"
+      integrity="sha256-vjvcOkhhNBuDUEjYgXwqhgzD5cafRG+qdK933G8Xrzk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"
+      integrity="sha256-8RM7T/q4FqeRqHqvRITDUFPFrMuFyE+PpeaFpdLM0Fw="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

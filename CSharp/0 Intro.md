@@ -12,7 +12,7 @@
 
 我们的第一节课将会是C\#语言基础，目前C\#也是原生桌面开发的首选语言，因此选择桌面开发的同学们也可以参加到我们的课程中来，我们之后也会进行基于C\#的桌面开发培训。
 
-我们的第零节课，没有任何人来教，所有的事情都需要你自己做，你需要安装我们上课时的软件。为了保证课程的连贯性，请务必在课前安装我们列出的软件！
+我们的第零节课，没有任何人来教，所有的事情都需要你自己做，需要安装我们上课时的使用的软件。为了保证课程的连贯性，请务必在课前安装我们列出的软件！
 
 | 系统    | 一定要安装的                              | 可选安装的 |
 | ------- | ----------------------------------------- | ---------- |
@@ -22,6 +22,8 @@
 
 本表为一览表，具体安装细节详见后文。
 
+注意：虽然C\#，.Net是跨平台框架，能够运行在Windows、macOS和Linux上，但是我们在课程中主要会使用Visual Studio，对于其他工具，我们在课程中无法过多提及，可能会在如创建工程方面有所不一样。
+
 ## Visual Studio（Windows使用）
 
 Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选开发工具，除此之外也支持C、C++、JavaScript、TypeScript、Python、F\#等语言的开发。
@@ -29,6 +31,8 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 对于学生来说，Visual Studio的社区版是免费的，也满足我们的学习需求，下面就来安装Visual Studio 2019的社区版。
 
 首先，登录Visual Studio的官网[Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/)，选择下载Visual Studio-Community 2019进行下载。
+
+注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio]([Visual Studio Preview (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/vs/preview/))，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件目前还不支持预览版的Visual Studio（见后文）。
 
 ![image-20211002190202370](images/image-20211002190202370.png)
 
