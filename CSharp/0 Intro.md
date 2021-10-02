@@ -46,6 +46,32 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 
 第一次运行Visual Studio会让你进行一些设置，这些设置不会影响功能，根据个人喜好选择就可以了。
 
+## Visual Studio的字体设置（强烈推荐）
+
+目前Visual Studio的中文版默认字体是**宋体**，这种字体既不美观也不实用。在编程时强烈推荐使用**等宽字体**，等宽字体，顾名思义，所有的数字、字母、英文符号、空格的宽度是相等的，而中文字符的宽度是其的两倍。
+
+在编程时使用这种字体最显著的好处是能够看清代码的层级，比如在下面的例子中，显然等宽字体（下）要比非等宽字体（上）看起来更加舒适，能够一下子看出来代码的结构。这样的效果，在面对大量代码时更加显著。
+
+![维基百科上关于的等宽字体的示范](./images/monospace_example.svg)
+
+因此，在这里推荐一款支持中文的等宽字体，更纱黑体，[点击下载](https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/Sarasa%20Gothic%20version%200.34.3/sarasa-gothic-ttc-0.34.3.7z)，下载完成后解压，选择全部解压出所有的**文件**，右键选择安装即可。
+
+安装完成后打开Visual Studio，选择“继续但无需代码”。
+
+![image-20211002193226269](images/image-20211002193226269.png)
+
+然后选择顶部工具栏的工具-选项。
+
+![image-20211002220625881](images/image-20211002220625881.png)
+
+在最上面的环境-字体和颜色中选择“等距更纱黑体 SC”，或者你喜欢的其他等宽字体。如果你不想找，可以在上面的搜索选项中直接搜索字体就有这项。
+
+![image-20211002220747857](images/image-20211002220747857.png)
+
+然后点击“确定”保存即可。
+
+
+
 ## ReSharper（可选，推荐，仅限Windows）
 
 ReSharper是一款JetBrains开发的Visual Studio插件，能够为你的Visual Studio提供更好代码补全功能，并且还有自动反编译、一键重构等好用的功能，能够极大地提升开发效率。
@@ -70,7 +96,7 @@ ReSharper是一款JetBrains开发的Visual Studio插件，能够为你的Visual 
 
 ![image-20211002193017278](images/image-20211002193017278.png)
 
-[上图页面的连接](https://account.jetbrains.com/licenses)
+[上图页面的链接](https://account.jetbrains.com/licenses)
 
 下载之后，一直下一步就安装完成了。
 
@@ -127,3 +153,4 @@ C#、 Visual Studio IntelliCode
 这里永远会为你推荐最适合你的下载，你要做的就是点击左侧第一个按钮就可以了。
 
 如前面所说的，如果你使用Code，那么你就需要学习.Net CLI的用法，而如果使用Rider，仅安装就可以了。
+
