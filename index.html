@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <title>ReFreSH-Lesson</title>
@@ -11,6 +11,12 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-toc@1.0.2/dist/toc.css"
+      integrity="sha256-hF0kSkrzOe1SrmpQkCkd2mkDEDVq/5MVZO5+yPci9/Y="
+      crossorigin="anonymous"
     />
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
@@ -29,6 +35,11 @@
         name: "HIT-ReFreSH-Lesson",
         repo: "HIT-ReFreSH/ReFreSH-Lesson",
         loadSidebar: true,
+        toc: {
+          scope: ".markdown-section",
+          headings: "h1, h2, h3, h4, h5, h6",
+          title: "目录",
+        },
       };
     </script>
     <script
@@ -44,6 +55,16 @@
     <script
       src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"
       integrity="sha256-8RM7T/q4FqeRqHqvRITDUFPFrMuFyE+PpeaFpdLM0Fw="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-csharp.min.js"
+      integrity="sha256-34a0yWu58z6UZ0FgpL+4QdmvJkmt354L5SZog2aIcX0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/docsify-toc@1.0.2/dist/toc.js"
+      integrity="sha256-Z0UGIghUV5fWMRIasyEeN1hga+RU0C589EwlJS4hQ3g="
       crossorigin="anonymous"
     ></script>
   </body>
