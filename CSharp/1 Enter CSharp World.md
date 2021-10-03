@@ -48,7 +48,7 @@ int a;
 声明一个名字为`a`的类型为`int`的变量。
 
 ``` csharp
-int a,b;
+int a, b;
 ```
 
 声明两个名字分别为`a`、`b`的类型为`int`的变量。
@@ -95,7 +95,9 @@ var e; //不合法，自动类型推导声明变量必须有初值
 | `uint`   | `unsigned int`       | 32位无符号整型                                               |
 | `bool`   | `bool`               | 布尔类型，C语言中需要包含头文件`stdbool.h`才能使用           |
 
-> 思考：已知32位有符号整型叫`int`，32位无符号整型叫`unit`，64位有符号整型叫做`long`，那么64位有符号整型应该叫做什么。
+> 在C语言中，数值类型的宽度与平台息息相关，但是在C\#中，相同的数值类型的宽度永远是恒定的。
+
+> 思考：已知32位有符号整型叫`int`，32位无符号整型叫`unit`，64位有符号整型叫做`long`，那么64位有符号整型应该叫做什么？
 
 计算机只能处理数字，也就是说我们所有在计算机上储存的数据最终都是以数字的形式储存的。
 
@@ -113,7 +115,7 @@ string input = Console.ReadLine();
 
 你这里可能会注意到，C#中并没有与`scanf`作用相同的函数，`Console.ReadLine`的功能反而与C语言中的`gets`相似，这是因为`scanf`中需要使用指针传递变量，而C\#中是不鼓励使用指针的。
 
-> 思考：C\#中不鼓励使用指针，那么C语言中使用指针的场景应该怎么实现呢。
+> 思考：C\#中不鼓励使用指针，那么在C\#中遇到C语言中使用指针的场景应该怎么办呢。
 
 ## 类型转换
 
@@ -176,7 +178,7 @@ int b = Convert.ToInt32(d); //合法，b的值也是10，与强制类型转换�
 
 有了前面的知识，应该就能很容易完成输入两个数然后输出相加结果的程序了！
 
-> 提示：C\#中的四则运算、逻辑运算、位运算的运算顺序、符号、法则与C语言完全相同，因此无需担心。
+> 提示：C\#中的四则运算、逻辑运算、位运算的运算顺序、符号、法则与C语言基本相同，因此无需担心。
 
 参考答案：
 
@@ -255,4 +257,130 @@ Input two numbers:
 3
 Result of 2 + 3 is 5.
 ```
+
+我们发现在相同的输入下，输出的结果是完全相同的，也就是说这两种写法是等效的。
+
+下面来介绍一下这种写法，这种写法叫做内插字符串，是用来格式化字符串的。具体格式为在引号前面加一个美元符号，然后就可以在字符串里使用大括号来框住要输出的内容了。如上面所示，打括号里面的内容可以是变量、表达式或者是常量。只要使用内插字符串，就能按照你想要的格式格式化输出字符串了。
+
+## 循环与条件语句
+
+如果我们要想给加法程序添加一个功能，即如果结果是5，那么我们就停止程序，否则就一直加下去。
+
+这个使用while循环可以很容易实现。幸运地是，在C\#中，while、do-while、for的循环语句的语法与C语言相同，于是我们就可以将程序改写成如下的内容。
+
+``` csharp
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            do
+            {
+                Console.WriteLine("Input two numbers:");
+                a = Convert.ToInt32(Console.ReadLine());
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Result of {a} + {b} is {a + b}.");
+            } while (a + b != 5);
+            
+            Console.WriteLine("The result is 5 and the program ends.");
+        }
+    }
+}
+```
+
+我们用若干输入进行测试，输出为：
+
+``` text
+Input two numbers:
+1
+2
+Result of 1 + 2 is 3.
+Input two numbers:
+10
+-5
+Result of 10 + -5 is 5.
+The result is 5 and the program ends.
+```
+
+C\#的条件语句if、switch与三目表达式与C语言的格式相同。
+
+对于switch语句，需要特别注意，非空的case必须接break，如：
+
+``` csharp
+int a = 10;
+switch(a)
+{
+    case 1:
+        Console.WriteLine("a is 1!");
+        break;
+    case 2:
+    case 3: //合法，因为case2是空的
+        Console.WriteLine("a is 2 or 3!");
+        break;
+    case 4:
+        Console.WriteLine("a is 4!"); //不合法，因为4不是空case，必须有break
+    default:
+        Console.WriteLine("a is more than 4!");
+        break;
+}
+```
+
+这样的规则好处是可以避免忘记写break造成的错误。
+
+C#中字符串也可以在switch中使用，如：
+
+``` csharp
+string str = "123456";
+switch(str)
+{
+    case "":
+        Console.WriteLine("str is empty!");
+        break;
+    case "123456":
+        Console.WriteLine("str is 123456!");
+        break;
+    default:
+        Console.WriteLine("str is something else.");
+        break;
+}
+```
+
+在C\#中，只要能比较的类型都能在switch中使用。
+
+此外，在C\#中，所有的循环语句和条件语句中的判断条件必须是`bool`。如：
+
+``` csharp
+int a = 0;
+if(a == 0) //合法，因为比较返回的是bool
+{
+    //Do something...
+}
+
+if(a) //不合法，因为a是int，不是bool
+{
+    //Do something...
+}
+```
+
+而C\#的逻辑运算要求两边都必须是`bool`，这是与C语言的一个显著差异点。
+
+这样的好处依然是防止编码错误，看下面的例子：
+
+``` csharp
+int a = 19;
+if(a = 10)
+{
+    //Do something
+}
+```
+
+上面的代码，在C语言中是合法的，但是在C\#中却不是合法的。我们要比较`a`是否与10相等，但是我们却少写了一个等号，这样就会造成在C语言中，无论a为何值，条件都会为真，并且`a`的值也会被修改为10，这不是我们想要发生的。
+
+## 结束语
+
+通过这节课的学习，我相信你已经学会了C\#的基本语法，并且能够编写简单的C\#程序了，下面我们有几个小题，大家如果有时间的话可以看一下。明天同一时间我们再见！
 
