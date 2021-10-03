@@ -32,7 +32,7 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 
 首先，登录Visual Studio的官网[Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/)，选择下载Visual Studio-Community 2019进行下载。
 
-注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio]([Visual Studio Preview (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/vs/preview/)，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件（详见下文）目前还不支持预览版的Visual Studio。
+注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/preview/)，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件（详见下文）目前还不支持预览版的Visual Studio。
 
 ![image-20211002190202370](images/image-20211002190202370.png)
 
