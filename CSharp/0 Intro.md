@@ -2,17 +2,17 @@
 
 ## 开场白
 
-大家好，我是ReFreSH俱乐部的尹照宇，从今天开始，我们来为大家开启我们的后端培训课程。现在坐在寝室、自习室或者图书馆听我们课的各位想必或多或少都对后端开发有些了解。
+大家好，我是ReFreSH俱乐部的尹照宇，从今天开始，我来为大家开启我们的后端培训课程。现在坐在寝室、自习室或者图书馆的各位同学想必或多或少都对后端开发有些了解。
 
-后端开发是一个从互联网诞生开始就存在的领域，后端是网站运行在服务器上的程序。最早的后端框架是CGI，主要的开发语言是C、C++，这两种语言的开发效率实在是低，因此市场上相继出现了PHP、Java、C#（读作See Sharp，非C井）等一系列极大提升开发效率的编程语言。
+后端开发是一个从互联网诞生开始就存在的领域，后端是网站运行在服务器上的程序。最早的后端框架是CGI，主要的开发语言是C、C++，这两种语言的开发效率实在是低，因此市场上相继出现了PHP、Java、C#（读作See Sharp，不读作C井）等一系列极大提升开发效率的编程语言。
 
 经过多年的发展，目前后端开发越来越向云计算、微服务靠拢。同时又涌现了诸如Go、Node等优秀的语言或者框架，而PHP也逐渐退出了历史的舞台。
 
-因此，经过综合的考虑，为了让大家在云计算和微服务的时代潮流下更好地了解后端开发的知识，我们特地选择了上手快、易掌握、云原生的后端框架ASP .Net Core与后端语言C#作为大家后端开发的第一站。只要精通了我们教给大家的框架，了解后端开发的基本原理，那么世界上其他所有的后端框架与语言都能触类旁通、融汇贯通，工作后进行后端开发也会如鱼得水，如虎添翼。
+因此，经过综合的考虑，为了让大家在云计算和微服务的时代潮流下更好地了解后端开发的知识，我们特地选择了上手快、易掌握、云原生的后端框架ASP .Net Core与后端语言C#作为大家后端开发的第一站。只要精通了我们教给大家的框架，了解后端开发的基本原理，那么世界上所有其他的后端框架与语言都能触类旁通，融汇贯通，工作后进行后端开发也会如鱼得水，如虎添翼。
 
-我们的第一节课将会是C\#语言基础，目前C\#也是原生桌面开发的首选语言，因此选择桌面开发的同学们也可以参加到我们的课程中来，我们之后也会进行基于C\#的桌面开发培训。
+我们的第一节课将会是C\#语言基础，目前C\#也是原生桌面开发的首选语言，因此选择桌面开发的同学们也可以参与到我们的课程中来，我们之后也会进行基于C\#的桌面开发培训。
 
-我们的第零节课，没有任何人来教，所有的事情都需要你自己做，需要安装我们上课时的使用的软件。为了保证课程的连贯性，请务必在课前安装我们列出的软件！
+我们的第零节课，没有任何人来教，所有的事情都需要你自己做，需要你来安装我们上课时需要使用的软件。为了保证课程的连贯性，请务必在课前安装我们列出的软件！
 
 | 系统    | 一定要安装的                              | 可选安装的 |
 | ------- | ----------------------------------------- | ---------- |
@@ -32,11 +32,11 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 
 首先，登录Visual Studio的官网[Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/)，选择下载Visual Studio-Community 2019进行下载。
 
-注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio]([Visual Studio Preview (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/vs/preview/))，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件目前还不支持预览版的Visual Studio（见后文）。
+注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio]([Visual Studio Preview (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/vs/preview/)，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件（详见下文）目前还不支持预览版的Visual Studio。
 
 ![image-20211002190202370](images/image-20211002190202370.png)
 
-当然，如果你使用的是macOS，你需要选择右侧的Visual Studio for Mac进行下载。
+当然，如果你使用的是macOS，你需要选择右侧的Visual Studio for Mac下载。
 
 在下载完安装器后，我们打开下载的文件，选择最上面的“ASP .Net和Web开发”和最下面的“.Net跨平台开发”，然后点击安装。
 
@@ -58,7 +58,7 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 
 ![维基百科上关于的等宽字体的示范](./images/monospace_example.svg)
 
-因此，在这里推荐一款支持中文的等宽字体，更纱黑体，[点击下载](https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/Sarasa%20Gothic%20version%200.34.3/sarasa-gothic-ttc-0.34.3.7z)，下载完成后解压，选择全部解压出所有的**文件**，右键选择安装即可。
+因此，在这里推荐一款支持中文的等宽字体，[更纱黑体](https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/Sarasa%20Gothic%20version%200.34.3/sarasa-gothic-ttc-0.34.3.7z)，下载完成后解压，选择全部解压出所有的**文件**，右键选择安装即可。
 
 安装完成后打开Visual Studio，选择“继续但无需代码”。
 
@@ -82,7 +82,7 @@ ReSharper是一款JetBrains开发的Visual Studio插件，能够为你的Visual 
 
 但是美中不足的是这款插件会拖慢Visual Studio的启动速度，并且没有中文支持。也就是说，安装这款插件会使你的Visual Studio加载变慢，并且在插件的功能处会出现英文。
 
-总而言之，这款插件还是很推荐安装的，尤其是对初学者来说，ReSharper能够检测不符合规范或者有潜在问题的代码，并且提供建议。
+总而言之，这款插件还是很推荐安装的，尤其是对初学者来说，ReSharper能够检测不符合规范或者有潜在问题的代码，并且提供修改建议。
 
 对于学生来说，ReSharper也是免费的，不过需要注册JetBrains的学生账号，下面是申请安装的详细过程。
 
@@ -128,7 +128,7 @@ Rider同样包含在JetBrains的教育包里，只要你按照上节的方法申
 
 如果你觉得申请JetBrains太麻烦了，或者英文不好，或者喜欢自由软件，可以考虑使用Visual Studio Code。
 
-Viusual Studio Code的安装十分简单，只需登录官网[Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)下载即可。
+Visual Studio Code的安装十分简单，只需登录官网[Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)下载即可。
 
 ![image-20211002201414685](images/image-20211002201414685.png)
 
@@ -142,7 +142,7 @@ C#、 Visual Studio IntelliCode
 
 ![image-20211002202328300](images/image-20211002202328300.png)
 
-注意：Visual Studio Code没有新建C\#项目的功能，你需要学习dotnet CLI的用法，dotnet CLI比较复杂，但是又详细的官方中文档[.NET CLI | Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/core/tools/)，这里不细讲。
+注意：Visual Studio Code没有新建C\#项目的功能，你需要学习如何使用dotnet CLI创建新工程。dotnet CLI比较复杂，但是有详细的官方中文档[.NET CLI | Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/core/tools/)，这里就不细说了。
 
 ## .Net CLI（如果你使用Rider或者Code，那就必须安装）
 
