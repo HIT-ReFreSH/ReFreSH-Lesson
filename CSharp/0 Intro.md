@@ -1,16 +1,16 @@
 # 第0讲 欢迎来到C\#
 
-## 开场白
+## 引言
 
 大家好，我是ReFreSH俱乐部的尹照宇，从今天开始，我来为大家开启我们的后端培训课程。现在坐在寝室、自习室或者图书馆的各位同学想必或多或少都对后端开发有些了解。
 
-后端开发是一个从互联网诞生开始就存在的领域，后端是网站运行在服务器上的程序。最早的后端框架是CGI，主要的开发语言是C、C++，这两种语言的开发效率实在是低，因此市场上相继出现了PHP、Java、C#（读作See Sharp，不读作C井）等一系列极大提升开发效率的编程语言。
+后端开发是一个从互联网诞生开始就存在的领域，后端是网站运行在服务器上的程序。最早的后端框架是CGI，主要的开发语言是C、C++，这两种语言的开发效率实在是低，因此市场上相继出现了PHP、Java、C#(/si: ʃɑːrp/，音同See Sharp)等一系列极大提升开发效率的编程语言。
 
-经过多年的发展，目前后端开发越来越向云计算、微服务靠拢。同时又涌现了诸如Go、Node等优秀的语言或者框架，而PHP也逐渐退出了历史的舞台。
+经过多年的发展，目前后端开发越来越向云计算、微服务靠拢。同时又涌现了诸如Go、Node等优秀的语言(框架)，PHP也逐渐退出了历史的舞台。
 
 因此，经过综合的考虑，为了让大家在云计算和微服务的时代潮流下更好地了解后端开发的知识，我们特地选择了上手快、易掌握、云原生的后端框架ASP .Net Core与后端语言C#作为大家后端开发的第一站。只要精通了我们教给大家的框架，了解后端开发的基本原理，那么世界上所有其他的后端框架与语言都能触类旁通，融汇贯通，工作后进行后端开发也会如鱼得水，如虎添翼。
 
-我们的第一节课将会是C\#语言基础，目前C\#也是原生桌面开发的首选语言，因此选择桌面开发的同学们也可以参与到我们的课程中来，我们之后也会进行基于C\#的桌面开发培训。
+我们的第一节课将会是C\#语言基础，目前C\#也是原生桌面开发的首选语言，因此本课程也面向想学习桌面开发的同学。我们之后也会进行基于C\#的桌面开发培训。
 
 我们的第零节课，没有任何人来教，所有的事情都需要你自己做，需要你来安装我们上课时需要使用的软件。为了保证课程的连贯性，请务必在课前安装我们列出的软件！
 
@@ -26,11 +26,11 @@
 
 ## Visual Studio（Windows使用）
 
-Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选开发工具，除此之外也支持C、C++、JavaScript、TypeScript、Python、F\#等语言的开发。
+Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选开发工具，除此之外也支持C/C++、JavaScript、TypeScript、Python、F\#等语言的开发。
 
 对于学生来说，Visual Studio的社区版是免费的，也满足我们的学习需求，下面就来安装Visual Studio 2019的社区版。
 
-首先，登录Visual Studio的官网[Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/)，选择下载Visual Studio-Community 2019进行下载。
+首先，登录Visual Studio的官网[Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/)，选择下载Visual Studio Community 2019进行下载。
 
 注：虽然我们这里说选择免费的Community下载，不过你仍然可以选择Professional或者Enterprise版的然后在网上搜索序列号使用。专业版和企业版的功能虽然更多，但是毕竟是盗版，不提倡使用。若想合法使用这两个版本，可以下载[预览版的Visual Studio](https://visualstudio.microsoft.com/zh-hans/vs/preview/)，预览版的Visual Studio是免费的，但是不能用于生产，而我们是学习用途，可以使用。此外，ReSharper插件（详见下文）目前还不支持预览版的Visual Studio。
 
@@ -74,8 +74,6 @@ Visual Studio是目前世界上最先进的IDE，也是目前开发C\#的首选�
 
 然后点击“确定”保存即可。
 
-
-
 ## ReSharper（可选，推荐，仅限Windows）
 
 ReSharper是一款JetBrains开发的Visual Studio插件，能够为你的Visual Studio提供更好代码补全功能，并且还有自动反编译、一键重构等好用的功能，能够极大地提升开发效率。
@@ -95,6 +93,8 @@ ReSharper是一款JetBrains开发的Visual Studio插件，能够为你的Visual 
 ![image-20211002192343552](images/image-20211002192343552.png)
 
 这里的电子邮件地址要使用学校的电子邮件，一般来说是`学号@stu.hit.edu.cn`，另外学校的电子邮件系统比较慢，如果确认邮件比较慢，很久没收到，请多等待一会儿并且检查垃圾邮件。
+
+如果无法使用学校邮箱注册，可以尝试使用“官方账号”注册。ReSharper并非本课程必须，但是在未来四年里你肯定会需要JetBrains的工具。
 
 在确认电子邮件之后，登录账号，就会进入到License管理界面，这里在“JetBrains Product Pack for Students”下面选择Download，然后选择ReSharper Ultimate右侧的Download就能下载了。
 
@@ -157,4 +157,3 @@ C#、 Visual Studio IntelliCode
 这里永远会为你推荐最适合你的下载，你要做的就是点击左侧第一个按钮就可以了。
 
 如前面所说的，如果你使用Code，那么你就需要学习.Net CLI的用法，而如果使用Rider，仅安装就可以了。
-
